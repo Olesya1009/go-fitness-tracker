@@ -46,6 +46,7 @@ func parsePackage(data string) (int, time.Duration, error) {
 func DayActionInfo(data string, weight, height float64) string {
 	 // Вызываем parsePackage
     steps, duration, err := parsePackage(data)
+    
     if err != nil {
         fmt.Println(err)  
         return ""        
